@@ -1,0 +1,29 @@
+<app-slider [nombre]="'Crear un articulo'"></app-slider>
+<h1>¡Crea tu articulo gratis!</h1>
+<div class="center">
+
+    <section id="contentt">
+        <form class="mid-form" #articleForm="ngForm" (ngSubmit)="onSubmit()"> 
+            
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="title" #title="ngModel" [(ngModel)]="articles.title" required>
+                <small *ngIf="title.invalid && title.touched">Necesario para crear su articulo</small>
+            </div>
+
+            <div class="form-group">
+                <label for="content">contenido</label>
+                <textarea type="text" name="content" #content="ngModel" [(ngModel)]="articles.content" required></textarea>
+                <small *ngIf="content.invalid && content.touched">Necesario para crear su articulo</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="img">Imagen</label>
+                <input class="img-up" type="file" name="file0" required >
+            </div>
+            <input type="submit" value="Guardar" class="btn-submit" [disabled]="articleForm.invalid">
+        </form>
+
+    </section>
+    <app-sidebar></app-sidebar>
+</div>

@@ -1,0 +1,11 @@
+<app-slider [nombre]="'??'"></app-slider>
+<div class="center">
+    <section id="content">
+        <input type="text" [(ngModel)]="text">
+        <button (click)="redireccion()">Redireccion</button>
+        <div>
+            <h2>{{nombre ? 'el nombre es:' + nombre : 'no hay parametros'}}</h2>
+        </div>
+    </section>
+    <app-sidebar></app-sidebar>
+</div>

@@ -1,0 +1,12 @@
+.peliculas{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+    width: 40rem;
+}
+
+.peliculas img{
+    height: 10rem;
+    object-fit: contain;
+}

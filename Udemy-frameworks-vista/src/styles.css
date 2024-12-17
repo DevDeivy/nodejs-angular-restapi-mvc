@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 0rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.active{
+    color: red;
+}
+
+input{
+    outline: none;
+}
+
+h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+
+.center{
+    display: flex;
+    justify-content: space-between;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 0 6rem;
+}

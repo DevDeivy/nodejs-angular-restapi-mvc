@@ -1,0 +1,19 @@
+<app-slider [nombre]="'Ejemplo de consumo de servicios API'"></app-slider>
+<h1>Ultimos articulos</h1>
+<div class="center">
+    <section id="content">
+        <div class="articles" *ngFor="let article of articles">
+            <div class="article">
+                <div class="img">
+                    <h2>{{article.title}}</h2>
+                    <img [src]="article.img ? api + '/getImage/' + article.img : ' ' " alt="{{article.title}}">
+                </div>
+                <div class="text">
+                    <p>{{article.content}}</p>
+                    <p>{{article.date | date : 'dd/MM/yyyy'}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <app-sidebar></app-sidebar>
+</div>

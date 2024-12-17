@@ -1,0 +1,13 @@
+<app-slider [nombre]="'Todas nuestras películas'"></app-slider>
+<h1>Películas</h1>
+<div class="center">
+    <section id="content">
+        <div *ngFor="let pelicula of peliculas; index as i">
+            <app-pelicula
+                [pelicula]="pelicula"
+                [i]="i + 1">
+            </app-pelicula>
+        </div> 
+    </section>
+    <app-sidebar></app-sidebar>
+</div>

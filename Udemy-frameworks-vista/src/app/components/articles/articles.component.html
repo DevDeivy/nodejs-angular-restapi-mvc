@@ -1,0 +1,15 @@
+<div class="articles" *ngFor="let article of articleGetPadre">
+    <div class="article">
+        <div class="img">
+            <h2>{{ article.title }}</h2>
+            <img [src]="article.img ? getImagePadre + '/getImage/' + article.img : ''" alt="{{ article.title }}">
+        </div>
+        <div class="text">
+            <p>{{ article.content }}</p>
+            <p>{{ article.date | date: 'dd/MM/yyyy' }}</p>
+            <div class="delete">
+                <a (click)="delete(article._id)">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>

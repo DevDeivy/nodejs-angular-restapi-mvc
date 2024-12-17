@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+}
+
+.mid-form{
+    max-width: 50%;
+    max-height: 100%;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+#contentt{
+    width: 50%;
+    margin-left: 20px;
+}

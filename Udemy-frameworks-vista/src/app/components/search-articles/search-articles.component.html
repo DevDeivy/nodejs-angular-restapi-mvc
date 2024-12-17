@@ -1,0 +1,15 @@
+<app-slider [nombre]="'Articulos encontrados'"></app-slider>
+<div style="text-align: center;" *ngIf="articles.length === 0">  
+    <h1>No se encontraron articulos</h1>
+</div>
+
+<div class="center" *ngIf="articles">
+    <section id="content">
+        <div class="contenido">
+            <app-articles 
+            [articleGetPadre]="articles">
+            </app-articles>
+        </div>
+    </section>
+    <app-sidebar></app-sidebar>
+</div>

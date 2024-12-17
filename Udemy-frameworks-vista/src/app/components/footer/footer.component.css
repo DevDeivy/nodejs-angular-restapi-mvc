@@ -1,0 +1,6 @@
+.wrapper{
+    display: grid;
+    place-items: center;
+    background-color: #ee2a2a;
+    height: 6rem;
+}
