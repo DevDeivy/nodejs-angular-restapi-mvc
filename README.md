@@ -1,9 +1,9 @@
-## run backend
+## Run backend
 ```
 npm i
 npm start
 ```
-## run angular
+## Run angular
 ```
 npm i
 ng serve
